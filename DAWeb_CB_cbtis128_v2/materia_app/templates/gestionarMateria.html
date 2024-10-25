@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Gestión materias
+{% endblock %}
+
+{% block cuerpo %}
+    <h1>Gestionar Materias David Yair Martínez Nava</h1>
+    {% for m in LasMaterias %}
+        <li>{{m.codigo}}.-.-.-{{m.nombre}}.-.-. {{m.creditos}}</li>
+    {% endfor %}
+{% endblock %}
